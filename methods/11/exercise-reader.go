@@ -1,0 +1,13 @@
+package main
+
+type MyReader struct{}
+
+// TODO: Add a Read([]byte) (int, error) method to MyReader.
+func (mr *MyReader) Read(b []byte) (int, error) {
+	b[0] = 'A'
+	return 1, nil
+}
+
+func main() {
+	//reader.Validate(MyReader{})
+}
